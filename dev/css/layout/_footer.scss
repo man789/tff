@@ -1,0 +1,19 @@
+.footer{
+  background-color: black;
+  color: white;
+  .wrapper{
+    display: flex;
+    gap: 2rem;
+    padding: 2%;
+    @include tablet{
+      flex-direction: column;
+    }
+  }
+}
+.logo-footer{
+  display: flex;
+  gap: 1rem;
+  p{
+    margin: 0;
+  }
+}
