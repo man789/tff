@@ -1,9 +1,14 @@
 .banner{
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-color: yellowgreen;
   display: flex;
   align-items: center;
+}
+.home {
+  .banner {
+    height: 100vh;
+  }
 }
 h1{
   span{
