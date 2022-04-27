@@ -1,0 +1,65 @@
+.contact {
+    .banner{
+        background: url("https://images-tm.tempo.co/all/2021/07/04/776448/776448_1200.jpg") center/cover;
+    }
+    background-color: $primary;
+    h1{
+        text-align: center;
+    }
+    h2{
+        color: $secundary;
+    }
+    section{
+        margin: 100px auto ;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        h2{
+            grid-column: span 2;
+            justify-self: center;
+        }
+    }
+    .contact-form{
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);    
+        gap: 2rem;
+        padding: 0;
+        div{
+            width: 100%;
+            input{
+                height: 40px;
+                width: 100%;
+                border: none;
+                outline: none;
+            }
+            textarea{
+                width: 100%;
+                resize: vertical;
+                border: none;
+                outline: none;
+            }
+             grid-column: 1;
+
+            &:nth-of-type(5){
+                width: 50%;
+                grid-column: span 2;
+                justify-self: center;
+                input{
+                    color: $primary;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            &:nth-of-type(4){
+                grid-column: 2;
+                grid-row: 1 / span 3;
+               input{
+                 
+                   width: 100%;
+               }
+            }
+        }
+    }
+}
