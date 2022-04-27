@@ -5,15 +5,20 @@ body{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  @include tablet{
+  @include tablet {
     width: 90%;
+  }
+}
+.footer{
+  a{
+    color: $secundary;
   }
 }
 a{
   text-decoration: none;
   color: $primary;
-  transition: .3s all ease-in-out;
-  &:hover{
+  transition: all .5s ease-in-out ;
+  &:hover {
     color: $red;
   }
 }
@@ -26,6 +31,7 @@ h1,h2,h3{
 }
 h1{
   font-size: 6rem;
+  color: $red;
 }
 h2{
   font-size: 3rem;

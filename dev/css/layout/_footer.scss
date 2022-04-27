@@ -8,12 +8,28 @@
     @include tablet{
       flex-direction: column;
     }
+    >div, nav{
+      width: calc(100%/3);
+    }
   }
+
 }
 .logo-footer{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
-  p{
-    margin: 0;
+  background-color: $secundary;
+  img{
+    width: 50%;
+  }
+}
+.nav-footer{
+  display: flex;
+  justify-content: space-around;
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
