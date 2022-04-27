@@ -5,15 +5,31 @@ body{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+<<<<<<< HEAD
   @include tablet{
     width: 90%;
   }
+=======
+  @include tablet {
+    width: 90%;
+  }
+}
+.footer{
+  a{
+    color: $secundary;
+  }
+>>>>>>> test
 }
 a{
   text-decoration: none;
   color: $primary;
+<<<<<<< HEAD
   transition: .3s all ease-in-out;
   &:hover{
+=======
+  transition: all .5s ease-in-out ;
+  &:hover {
+>>>>>>> test
     color: $red;
   }
 }
@@ -26,10 +42,18 @@ h1,h2,h3{
 }
 h1{
   font-size: 6rem;
+<<<<<<< HEAD
+=======
+  color: $red;
+>>>>>>> test
 }
 h2{
   font-size: 3rem;
 }
 h3{
   font-size: 1.5rem;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> test

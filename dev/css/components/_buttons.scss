@@ -1,5 +1,9 @@
 .btn{
+<<<<<<< HEAD
   background-color: $secondary;
+=======
+  background-color: $secundary;
+>>>>>>> test
   padding: 10px 15px;
   display: flex;
   flex-direction: column;
@@ -8,11 +12,21 @@
     font-size: 1.5rem;
     color: $primary;
     text-align: center;
+<<<<<<< HEAD
     transition: .5s all ease-in-out;
+=======
+    transition: all .5s ease-in-out ;
+>>>>>>> test
     &:nth-of-type(2){
       margin-top: -15px;
     }
     &:hover{
+      color: $red;
+    }
+  }
+
+  &:hover {
+    i{
       color: $red;
     }
   }
