@@ -5,8 +5,31 @@ body{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  @include tablet{
+    width: 90%;
+  }
 }
 a{
   text-decoration: none;
-  color: white;
+  color: $primary;
+  transition: .3s all ease-in-out;
+  &:hover{
+    color: $red;
+  }
+}
+img{
+  display: block;
+  width: 100%;
+}
+h1,h2,h3{
+  font-family: $title-font;
+}
+h1{
+  font-size: 6rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.5rem;
 }

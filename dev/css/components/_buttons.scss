@@ -1,15 +1,19 @@
 .btn{
-  background-color: aqua;
+  background-color: $secondary;
   padding: 10px 15px;
   display: flex;
   flex-direction: column;
   width: 60px;
   i{
     font-size: 1.5rem;
-    color: black;
+    color: $primary;
     text-align: center;
+    transition: .5s all ease-in-out;
     &:nth-of-type(2){
       margin-top: -15px;
+    }
+    &:hover{
+      color: $red;
     }
   }
 }
