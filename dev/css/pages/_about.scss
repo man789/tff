@@ -1,0 +1,20 @@
+.about{
+    font-family: $title-font;
+    font-size: 3rem;
+    text-align: center;
+    @include tablet{
+        font-size: 2rem;
+    }
+}
+.team{
+    background-color: $primary;
+    padding: 40px 0px;
+    h2, p{
+        color: $secundary;
+    }
+    @include tablet{
+        h2{
+            text-align: center;
+        }
+    }
+}

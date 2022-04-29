@@ -1,0 +1,79 @@
+.title_single_album, .descriptif-single-album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socials-single-albums{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.socials-single-album-links{
+    display: flex;
+    justify-content: space-around;
+    a{
+        font-size: 2rem;
+        padding: 5px;
+    }
+}
+.info-single-album, .info-about{
+    display: flex;
+    gap: 2em;
+    padding: 20px 0px;
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.about-single-album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pic-single-album, .pic-about{
+    width: 50%;
+    img{
+        display: block;
+        width: 100%;
+      }
+}
+.tracks-title, .membre-about{
+    width: 50%;
+    p{
+        padding: 5px;
+    }
+}
+.btn-return-to-artist{
+    background-color: $red;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+    &:hover{
+        background-color: $primary;
+    }
+    a{
+        font-size: 1.5rem;
+        &:hover{
+            color: $secundary;
+        }
+    }
+}
+.recommended-single-album{
+    background-color: grey;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        margin-top: 0;
+    }
+}
+.recommended-single-album-box{
+    display: flex;
+    gap: 2em;
+}
+.recommended-single-album-pic{
+    width: calc(100%/3);
+}
