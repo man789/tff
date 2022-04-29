@@ -9,23 +9,6 @@
     h2{
         color: $secundary;
     }
-<<<<<<< HEAD
-
-=======
-    section{
-        margin: 100px auto ;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        h2{
-            grid-column: span 2;
-            justify-self: center;
-        }
-    }
-    .newsletter{
-        display: block;
-    }
->>>>>>> firstMerge
     .contact-form{
         display: grid;
         grid-template-columns: repeat(2, 1fr);    
