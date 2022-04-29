@@ -8,4 +8,18 @@
 .links{
   display: flex;
   gap: 2rem;
+  a{
+    &::after{
+      display: block;
+      content: "";
+      width: 0;
+      margin: 0 auto;
+      height: 2px;
+      background-color: $red;
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover::after{
+      width: 100%;
+    }
+  }
 }
