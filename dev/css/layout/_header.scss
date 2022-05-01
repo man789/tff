@@ -1,11 +1,28 @@
 .header{
+  border-radius: 50px;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  background-color: $secundary;
-  padding: 10px 0;
+  left: 0%;
+  right: 0%;
+  padding: 20px 0;
+  z-index: 20;
+
 }
+
 .logo-header{
+  position: relative;
   width: 10%;
+  transition: .5s all;
+  
+  a {  
+    display: flex;
+    justify-content: center;
+
+  }
+
+  img {
+    width: 30%;
+    transition: .3s all;
+    cursor: pointer;
+  }
 }
