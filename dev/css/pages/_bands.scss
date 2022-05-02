@@ -19,16 +19,25 @@
 
         .box-img {
             position: relative;
-            border: solid 1px rgba(0, 0, 0, 0.116);
-            width: 900px;
-            height: 600px;
+            // border: solid 1px rgba(0, 0, 0, 0.116);
+            width: 80%;
+            height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;
             transition: .5s all ease-in-out;
+            overflow: hidden;
 
             .genre {
                 transition: .5s all;
+            }
+
+            .bands-img {
+                position: absolute;
+                opacity: 0;
+                transition: .5s all;
+                object-fit: cover;
+                width: 101%;
             }
         }
     }
@@ -45,41 +54,18 @@
             flex-direction: column;
             justify-content: space-around;
             transition: 1s;
-            height: 60%;
+            height: 50%;
             .box-names {
                 display: flex;
                 align-items: center;
                 height: 100%;
                 cursor: pointer;
-            }
 
-            span {
-                font-size: 1.5rem;
-                font-family: 'Oswald', sans-serif;
-                letter-spacing: .02rem;
+                .band-name {
+                    font-size: 1.5rem;
+                    font-family: $title-font;
+                }
             }
         }
     }
-}
-
-
-.bands-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: .3s all ease-in-out;
-}
-
-.band00 {
-    background: url('../img/bands/bbng.jpg') center/cover;
-}
-.band01 {
-    background: url('../img/bands/slint.png') center/cover;
-}
-.band02 {
-    background: url('../img/bands/gybe.jpg') center/cover;
-}
-.band03 {
-    background: url('../img/bands/ho99o9.png') center/cover;
 }
