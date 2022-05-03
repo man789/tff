@@ -47,3 +47,15 @@ h3{
   margin: 40px 0px;
   }
 }
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}

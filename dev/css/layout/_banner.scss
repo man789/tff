@@ -3,8 +3,11 @@
   height: 50vh;
   background-color: $primary;
   display: flex;
+  justify-content: center;
   align-items: center;
+
 }
+
 .home {
   .banner {
     height: 100vh;
@@ -15,6 +18,7 @@
     background: url('../img/events/event.jpg') center/cover;
   }
 }
+
 h1{
   margin-bottom: 0;
   span{

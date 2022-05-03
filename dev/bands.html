@@ -10,24 +10,25 @@
   <title></title>
 </head>
 <body class="bands">
-  <!-- Naviguation -->
-  <header class="header">
-    <nav class="main-nav wrapper">
-      <div class="links">
-        <a href="events.html">Events</a>
-        <a href="bands.html">Bands</a>
-        <a href="#">Merch</a>
-      </div>
-      <div class="logo-header">
-        <img src="img/concrete.png" alt="concrete jungle logo">
-      </div>
-      <div class="links">
-        <a href="news.html">News</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
-  </header>
+<!-- Naviguation -->
+<header class="header">
+  <nav class="main-nav wrapper">
+    <div class="links">
+      <a href="">Bands</a>
+      <a href="">Events</a>
+      <a href="">Merch</a>
+    </div>
+    <div class="logo-header">
+      <a href="./index.html"><img id="logo-nav" src="./img/logo/concrete.png" alt="concrete jungle logo"></a>
+    </div>
+    <div class="links">
+      <a href="">News</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </div>
+    <div class="nav-bg"></div>
+  </nav>
+</header>
 
   <!-- Main -->
   <main class="main">
@@ -36,32 +37,49 @@
       </div>
     </div>
     <section class="bands-section">
+
       <div class="bands-container">
-        <div class="left">
+        <div class="img-part">
+            <div class="box-img">
+                <div class="genre">rock.</div>
+                <p class="band-typed"></p>
+                <img class="bands-img" src="./img/bands/bbng.jpg" alt="">
+                <img class="bands-img" src="./img/bands/slint.png" alt="">
+                <img class="bands-img" src="./img/bands/gybe.jpg" alt="">
+                <img class="bands-img" src="./img/bands/ho99o9.png" alt="">
+            </div>
+        </div>
+        <div class="name-part flex-start">
+            <div class="bands-names">
+                <div class="box-names flex-start" onmouseenter="nameOver(0)" onmouseleave="nameOut(0)"><span class="band-name">BADBADNOTGOOD</span></div>
+                <div class="box-names flex-start" onmouseenter="nameOver(1)" onmouseleave="nameOut(1)"><span class="band-name">Slint</span></div>
+                <div class="box-names flex-start" onmouseenter="nameOver(2)" onmouseleave="nameOut(2)"><span class="band-name">Godspeed You! Black Emperor</span></div>
+                <div class="box-names flex-start" onmouseenter="nameOver(3)" onmouseleave="nameOut(3)"><span class="band-name">Ho99o9</span></div>
+            </div>
+        </div>
+      </div>
+
+      <div class="bands-container">
+        <div class="name-part flex-end">
+            <div class="bands-names">
+                <div class="box-names flex-end" onmouseenter="nameOver(4)" onmouseleave="nameOut(4)"><span class="band-name">BADBADNOTGOOD</span></div>
+                <div class="box-names flex-end" onmouseenter="nameOver(5)" onmouseleave="nameOut(5)"><span class="band-name">Slint</span></div>
+                <div class="box-names flex-end" onmouseenter="nameOver(6)" onmouseleave="nameOut(6)"><span class="band-name">Godspeed You! Black Emperor</span></div>
+                <div class="box-names flex-end" onmouseenter="nameOver(7)" onmouseleave="nameOut(7)"><span class="band-name">Ho99o9</span></div>
+            </div>
+        </div>
+
+        <div class="img-part">
           <div class="box-img">
-            <h2>rock</h2>
+              <h2 class="genre">hip-hop.</h2>
+              <img class="bands-img" src="./img/bands/bbng.jpg" alt="">
+              <img class="bands-img" src="./img/bands/slint.png" alt="">
+              <img class="bands-img" src="./img/bands/gybe.jpg" alt="">
+              <img class="bands-img" src="./img/bands/ho99o9.png" alt="">
           </div>
-        </div>
-        <div class="right">
-          <div class="bands-names">
-            <span>BADBADNOTGOOD</span>
-            <span>Slint</span>
-            <span>Godspeed You! Black Emperor</span>
-            <span>Ho99o9</span>
-          </div>
-        </div>
       </div>
-    </section>
-    <section class="newsletter">
-      <div class="wrapper">
-        <h2>subscribe our<br>newsletter</h2>
-        <div>
-          <form action="">
-            <input type="text" placeholder="enter your email" name="search">
-            <button type="submit">Submit</button>
-          </form>
-        </div>
       </div>
+      
     </section>
   </main>
 
@@ -69,7 +87,7 @@
   <footer class="footer">
     <div class="wrapper">
       <div class="logo-footer">
-        <img src="img/concrete-white.png" alt="concrete jungle logo">      
+          <img src="./img/logo/cj_blanc.png" alt="concrete jungle logo">      
       </div>
       <nav class="nav-footer">
         <div>
@@ -100,6 +118,7 @@
       <small>Copyright ©2022 All rights reserved | This template was made by sangoku team </small>
     </div>
   </footer>
+  <script src="js/bands.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 </html>
