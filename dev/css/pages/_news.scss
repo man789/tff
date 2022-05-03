@@ -23,46 +23,5 @@
     grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
 }
-.card-blog{
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.aside{
-  width: 30%;
-  form{
-    display: flex;
-    margin-top: 5%;
-  }
-  input {
-    border: none;
-    background-color: $red;
-    padding: 10px 20px;
-    width: 80%;
-    color: #fff;
-    border-radius: 25px 0 0 25px;
-  }
-  button {
-    border: none;
-    padding: 10px 15px;
-    width: 20%;
-    background-color: $red;
-    border-radius: 0 25px 25px 0;
-    cursor: pointer;
-  }
-  i {
-    color: #fff;
-  }
-  ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 1;
-    /* Firefox */
-  }
-  :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: white;
-  }
-  ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: white;
-  }
-}
+
+

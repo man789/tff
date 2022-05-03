@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="css/styles.min.css">
   <title>Archives</title>
 </head>
@@ -37,89 +41,175 @@
     </div>
     
     <section class="searched">
-      <div class="result-searched">
-        <form action="">
-          <input type="text" placeholder="Search Posts" name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-      <div class="wrapper">
-        <!-- boite d'un blog -->
-        <article class="blog-searched">
-          <a href="#">
-            <div class="image-blog-searched">
-              <img src="img/concrete.png" alt="image de l'article mis en avant">
-            </div>
-            <div class="content-blog-searched">
-              <h3>The_title</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam tempore, ad enim voluptatum quod.</p>
-            </div>
-          </a>
-        </article>
-        <!-- fin boite blog -->
-        <!-- boite d'un blog -->
-        <article class="blog-searched">
-          <a href="#">
-            <div class="image-blog-searched">
-              <img src="img/concrete.png" alt="image de l'article mis en avant">
-            </div>
-            <div class="content-blog-searched">
-              <h3>The_title</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam tempore, ad enim voluptatum quod.</p>
-            </div>
-          </a>
-        </article>
-        <!-- fin boite blog -->
-        <!-- boite d'un blog -->
-        <article class="blog-searched">
-          <a href="#">
-            <div class="image-blog-searched">
-              <img src="img/concrete.png" alt="image de l'article mis en avant">
-            </div>
-            <div class="content-blog-searched">
-              <h3>The_title</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam tempore, ad enim voluptatum quod.</p>
-            </div>
-          </a>
-        </article>
-        <!-- fin boite blog -->
-        <!-- boite d'un blog -->
-        <article class="blog-searched">
-          <a href="#">
-            <div class="image-blog-searched">
-              <img src="img/concrete.png" alt="image de l'article mis en avant">
-            </div>
-            <div class="content-blog-searched">
-              <h3>The_title</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam tempore, ad enim voluptatum quod.</p>
-            </div>
-          </a>
-        </article>
-        <!-- fin boite blog -->
-        <!-- boite d'un blog -->
-        <article class="blog-searched">
-          <a href="#">
-            <div class="image-blog-searched">
-              <img src="img/concrete.png" alt="image de l'article mis en avant">
-            </div>
-            <div class="content-blog-searched">
-              <h3>The_title</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam tempore, ad enim voluptatum quod.</p>
-            </div>
-          </a>
-        </article>
-        <!-- fin boite blog -->
-        
-      </div>
-    </section>
-    <section class="newsletter">
-      <div class="wrapper">
-        <h2>subscribe our<br>newsletter</h2>
+      <div class="content-news wrapper">
         <div>
-          <form action="">
-            <input type="text" placeholder="enter your email" name="search">
-            <button type="submit">Submit</button>
-          </form>
+          <h3>Archives</h3>
+          <section class="blog">
+              <!-- un blog  -->
+              <article class="card-blog">
+                <div>
+                  <img src="img/concrete.png" alt="concrete jungle logo">
+                </div>
+                <div>
+                  <a href="#"><h3>Title News the_title()</h3></a>
+                </div>
+                <div>
+                  <p>Description News the_excerpt()</p>
+                </div>
+              </article>
+              <!-- fin blog  -->
+              <!-- un blog  -->
+              <article class="card-blog">
+                <div>
+                  <img src="img/concrete.png" alt="concrete jungle logo">
+                </div>
+                <div>
+                  <a href="#"><h3>Title News the_title()</h3></a>
+                </div>
+                <div>
+                  <p>Description News the_excerpt()</p>
+                </div>
+              </article>
+              <!-- fin blog  -->
+              <!-- un blog  -->
+              <article class="card-blog">
+                <div>
+                  <img src="img/concrete.png" alt="concrete jungle logo">
+                </div>
+                <div>
+                  <a href="#"><h3>Title News the_title()</h3></a>
+                </div>
+                <div>
+                  <p>Description News the_excerpt()</p>
+                </div>
+              </article>
+              <!-- fin blog  -->
+              <!-- un blog  -->
+              <article class="card-blog">
+                <div>
+                  <img src="img/concrete.png" alt="concrete jungle logo">
+                </div>
+                <div>
+                  <a href="#"><h3>Title News the_title()</h3></a>
+                </div>
+                <div>
+                  <p>Description News the_excerpt()</p>
+                </div>
+              </article>
+              <!-- fin blog  -->
+              <!-- un blog  -->
+              <article class="card-blog">
+                <div>
+                  <img src="img/concrete.png" alt="concrete jungle logo">
+                </div>
+                <div>
+                  <a href="#"><h3>Title News the_title()</h3></a>
+                </div>
+                <div>
+                  <p>Description News the_excerpt()</p>
+                </div>
+              </article>
+              <!-- fin blog  -->
+              <!-- un blog  -->
+              <article class="card-blog">
+                <div>
+                  <img src="img/concrete.png" alt="concrete jungle logo">
+                </div>
+                <div>
+                  <a href="#"><h3>Title News the_title()</h3></a>
+                </div>
+                <div>
+                  <p>Description News the_excerpt()</p>
+                </div>
+              </article>
+              <!-- fin blog  -->              
+          </section>
+        </div>
+        <aside class="aside">
+          <div>
+            <form action="">
+              <input type="text" placeholder="Search Posts" name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <h3>Latest Event</h3>
+          <article class="card-event">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <a href="#">
+                    <article class="card-blog">
+                      <div>
+                        <img src="img/concrete.png" alt="concrete jungle logo">
+                      </div>
+                      <div>
+                        <h3>Title News the_title()</h3>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <article class="card-blog">
+                      <div>
+                        <img src="img/concrete.png" alt="concrete jungle logo">
+                      </div>
+                      <div>
+                        <h3>Title News the_title()</h3>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <article class="card-blog">
+                      <div>
+                        <img src="img/concrete.png" alt="concrete jungle logo">
+                      </div>
+                      <div>
+                        <h3>Title News the_title()</h3>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- fin slider  -->
+          </article>
+          <article class="aside-albums">
+            <h3>For you</h3>
+            <div class="aside-random-album">
+                <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+                <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+                <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+                <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+            </div>
+          </article>
+          <article class="aside-albums">
+            <h3>Our merch</h3>
+            <div class="aside-random-album">
+                <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+                <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+                <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+                <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+            </div>
+          </article>
+
+
+        </aside>
+      </div>
+      <section class="newsletter">
+        <div class="wrapper">
+          <h2>subscribe our<br>newsletter</h2>
+          <div>
+            <form action="">
+              <input type="text" placeholder="enter your email" name="search">
+              <button type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -159,6 +249,8 @@
       <small>Copyright ©2022 All rights reserved | This template was made by sangoku team </small>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
+  <script src="js/swiperjs.min.js"></script>
 </body>
 </html>
