@@ -1,0 +1,47 @@
+.single-event-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.single-event-poster-and-tickets{
+    display: flex;
+    background: url("../img/fest-bg.jpg") center/cover;
+    position: relative;
+    &::before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(78, 78, 82, 0.3);
+    }
+}
+.single-event-tickets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    z-index: 200;
+}
+.single-event-poster{
+    width: 50%;
+}
+.single-event-poster-pic{
+    max-width: 400px;
+    max-height: 600px;
+}
+.btn-single-event-tickets{
+    background-color: $red;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    &:hover{
+        cursor: pointer;
+        background-color: $primary;
+        color: $secundary;
+    }
+}

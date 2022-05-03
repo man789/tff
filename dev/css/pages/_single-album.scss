@@ -76,7 +76,13 @@
 }
 .recommended-single-album-pic{
     width: calc(100%/3);
+    transition: all .3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 10px 16px 16px -5px rgba(0,0,0,0.76);
+    }
 }
+
 
 .album{
     width: 50%;
