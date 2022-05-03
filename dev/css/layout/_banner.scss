@@ -1,0 +1,23 @@
+.banner{
+  width: 100%;
+  height: 50vh;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+}
+.home {
+  .banner {
+    height: 100vh;
+  }
+}
+.event{
+  .banner{
+    background: url('../img/events/event.jpg') center/cover;
+  }
+}
+h1{
+  margin-bottom: 0;
+  span{
+    display: block;
+  }
+}

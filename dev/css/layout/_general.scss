@@ -1,0 +1,48 @@
+body{
+  font-family: $txt-font;
+}
+.wrapper{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  @include tablet {
+    width: 90%;
+  }
+}
+.footer{
+  a{
+    color: $secundary;
+  }
+}
+a{
+  text-decoration: none;
+  color: $primary;
+  transition: all .5s ease-in-out ;
+  &:hover {
+    color: $red;
+  }
+}
+img{
+  display: block;
+  width: 100%;
+}
+h1,h2,h3{
+  font-family: $title-font;
+}
+h1{
+  font-size: 6rem;
+  color: $red;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+.about,
+.single-album,
+.single-event{
+  section{
+  margin: 40px 0px;
+  }
+}

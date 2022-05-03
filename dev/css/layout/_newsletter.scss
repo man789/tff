@@ -1,0 +1,36 @@
+.newsletter{
+  background-color: white;
+  padding: 5%;
+  .wrapper{
+    h2{
+      text-align: center;
+      color: black;
+    }
+    > div:nth-of-type(1){
+      width: 50%;
+      margin: 0 auto;
+    }
+    form{
+      display: flex;
+      justify-content: space-between;
+    }
+    input {
+      padding: 10px 20px;
+      width: 40%;
+      color: #fff;
+      border: 1px solid #ececec;
+    }
+    button {
+      padding: 10px 20px;
+      width: 40%;
+      color: black;
+      border: 1px solid #ececec;
+      cursor: pointer;
+      transition: .3s all ease-in-out;
+      &:hover{
+        color: white;
+        background-color: grey;
+      }
+    }
+  }
+}
