@@ -61,9 +61,28 @@
             flex-direction: column;
         }
     }
-    .map{
-        width: 80%;
+    .info-contact{
+        margin: 100px auto;
+        display: flex;
+        color: $secundary;
+        align-items: center;
+        gap: 1rem;
+        a{
+            color: $secundary;
+        }
+        i{
+            margin-right: 20px;
+            font-size: 2rem;
+            color: $red;
+        }
+    }
+    .info-contact-txt{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    iframe{
         height: 400px;
-        margin:  100px auto;
     }
 }
