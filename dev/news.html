@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/styles.min.css">
   <title>News</title>
 </head>
@@ -16,18 +17,19 @@
   <header class="header">
     <nav class="main-nav wrapper">
       <div class="links">
-        <a href="events.html">Events</a>
         <a href="bands.html">Bands</a>
-        <a href="#">Merch</a>
+        <a href="events.html">Events</a>
+        <a href="merch.html">Merch</a>
       </div>
       <div class="logo-header">
-        <img src="img/concrete.png" alt="concrete jungle logo">
+        <a href="./index.html"><img id="logo-nav" src="./img/logo/concrete.png" alt="concrete jungle logo"></a>
       </div>
       <div class="links">
         <a href="news.html">News</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
+      <div class="nav-bg"></div>
     </nav>
   </header>
   <!-- Main -->
@@ -110,27 +112,77 @@
         </section>
       </div>
       <aside class="aside">
-        <h3>Latest Event</h3>
-        <article class="card-event">
-          <div>
-            <img src="img/concrete.png" alt="concrete jungle logo">
-          </div>
-          <div>
-            <h3>Title Event the_title()</h3>
-          </div>
-          <div>
-            <p>Description Event the_excerpt()</p>
-          </div>
-        </article>
-        <div>
-          <a href="#" class="btn-aside">Button</a>
-        </div>
         <div>
           <form action="">
             <input type="text" placeholder="Search Posts" name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
+        <h3>Latest Event</h3>
+        <article class="card-event">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <article class="card-blog">
+                    <div>
+                      <img src="img/concrete.png" alt="concrete jungle logo">
+                    </div>
+                    <div>
+                      <h3>Title News the_title()</h3>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <article class="card-blog">
+                    <div>
+                      <img src="img/concrete.png" alt="concrete jungle logo">
+                    </div>
+                    <div>
+                      <h3>Title News the_title()</h3>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <article class="card-blog">
+                    <div>
+                      <img src="img/concrete.png" alt="concrete jungle logo">
+                    </div>
+                    <div>
+                      <h3>Title News the_title()</h3>
+                    </div>
+                  </article>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- fin slider  -->
+        </article>
+        <article class="aside-albums">
+          <h3>For you</h3>
+          <div class="aside-random-album">
+              <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+              <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+              <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+              <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+          </div>
+        </article>
+        <article class="aside-albums">
+          <h3>Our merch</h3>
+          <div class="aside-random-album">
+              <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+              <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+              <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+              <a href="#"><img src="img/album_pic.JPG" alt=""></a>
+          </div>
+        </article>
       </aside>
     </div>
     <section class="newsletter">
@@ -180,7 +232,9 @@
       <small>Copyright ©2022 All rights reserved | This template was made by sangoku team </small>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
+  <script src="js/swiperjs.min.js"></script>
 </body>
 
 </html>
