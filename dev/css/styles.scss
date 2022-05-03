@@ -11,8 +11,15 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
+@import "layout/newsletter";
 
 @import "pages/home";
+@import "pages/events";
+@import "pages/news";
 @import "pages/single-event";
 @import "pages/single-album";
 @import "pages/about";
+@import "pages/404";
+@import "pages/search";
+@import "pages/contact";
+@import "pages/bands";
