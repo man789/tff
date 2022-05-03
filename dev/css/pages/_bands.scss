@@ -30,6 +30,9 @@
 
             .genre {
                 transition: .5s all;
+                font-family: $title-font;
+                font-size: 3rem;
+                font-weight: 600;
             }
 
             .bands-img {
@@ -39,15 +42,22 @@
                 object-fit: cover;
                 width: 101%;
             }
+
+            .band-typed {
+                position: absolute;
+                color: white;
+                font-size: 2rem;
+                font-family: $title-font;
+                z-index: 21;
+                inset: 5%;
+            }
         }
     }
 
     .name-part {
-        padding-left: 100px;
         width: 40%;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
         
         .bands-names {
             display: flex;
