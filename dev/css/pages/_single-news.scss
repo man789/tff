@@ -1,0 +1,48 @@
+.single-news {
+  background-color: $black;
+
+  .main {
+    // margin-top: 150px;
+    color: $white;
+
+    .title-single-news {
+      text-align: center;
+      padding: 5% 0 0 0;
+    }
+
+  }
+}
+.bg-single-news{
+  height: 400px;
+  width: 100%;
+  background: url('../img/fest-bg.jpg') center/cover;
+}
+.content-single-news{
+  padding: 5% 0;
+  .wrapper{
+    display: flex;
+    gap: 2rem;
+    >div:nth-of-type(2) {
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}
+.info-single-news{
+  width: 15%;
+  span{
+    display: block;
+    margin-bottom: 10%;
+    i{
+      margin-right: 5%;
+    }
+    a{
+      color: $white;
+      transition: .3s all ease-in-out;
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+}
