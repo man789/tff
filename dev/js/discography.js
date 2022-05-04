@@ -1,5 +1,5 @@
-let styleMusic = document.querySelectorAll('.style-music');
-let styleMusicBtn = document.querySelectorAll('.style-music-btn');
+let styleMusic = document.querySelectorAll(".style-music");
+let styleMusicBtn = document.querySelectorAll(".style-music-btn");
 
 styleMusicBtn.forEach(btn => {
     btn.onclick = () => {
