@@ -1,4 +1,3 @@
-
 let navLogo = document.getElementById('logo-nav');
 
 // Menu qui réduit onScroll
@@ -15,3 +14,5 @@ window.addEventListener('scroll', function () {
         navLogo.style.width = "30%"
     }
 })
+
+
