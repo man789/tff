@@ -1,12 +1,12 @@
 .btn{
-  background-color: $secundary;
+  background-color: $white;
   padding: 10px 15px;
   display: flex;
   flex-direction: column;
   width: 60px;
   i{
     font-size: 1.5rem;
-    color: $primary;
+    color: $black;
     text-align: center;
     transition: all .5s ease-in-out ;
     &:nth-of-type(2){
