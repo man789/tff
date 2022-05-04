@@ -1,7 +1,4 @@
 .contact {
-    .banner{
-        background: url("https://images-tm.tempo.co/all/2021/07/04/776448/776448_1200.jpg") center/cover;
-    }
     background-color: $primary;
     h1{
         text-align: center;
@@ -33,6 +30,7 @@
                 resize: vertical;
                 border: none;
                 outline: none;
+                padding: 10px;
             }
              grid-column: 1;
 
@@ -65,7 +63,7 @@
         margin: 100px auto;
         display: flex;
         color: $secundary;
-        align-items: center;
+        flex-direction: column;
         gap: 1rem;
         a{
             color: $secundary;
@@ -77,7 +75,6 @@
         }
     }
     .info-contact-txt{
-        width: 35%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
