@@ -31,7 +31,22 @@
   font-size: .8em;
   transition: .3s all ease-in-out;
   &:hover{
-    background-color: black;
-    color: white;
+    background-color:$black;
+    color: $white;
+  }
+}
+.btn-member {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 25px;
+  background-color: $red;
+  font-size: .8em;
+  transition: .3s all ease-in-out;
+  border: 1px solid $red;
+  margin-right: 10px;
+  &:hover {
+    background-color: $black;
+    color: $white;
   }
 }
