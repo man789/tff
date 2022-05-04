@@ -1,10 +1,10 @@
 .contact {
-    background-color: $primary;
+    background-color: $black;
     h1{
         text-align: center;
     }
     h2{
-        color: $secundary;
+        color: $white;
     }
     
     .contact-form{
@@ -39,7 +39,7 @@
                 grid-column: span 2;
                 justify-self: center;
                 input{
-                    color: $primary;
+                    color: $black;
                     &:hover{
                         cursor: pointer;
                     }
@@ -62,11 +62,11 @@
     .info-contact{
         margin: 100px auto;
         display: flex;
-        color: $secundary;
+        color: $white;
         flex-direction: column;
         gap: 1rem;
         a{
-            color: $secundary;
+            color: $white;
         }
         i{
             margin-right: 20px;
