@@ -51,12 +51,12 @@
     width: 300px;
     margin: 0 auto;
     &:hover{
-        background-color: $primary;
+        background-color: $black;
     }
     a{
         font-size: 1.5rem;
         &:hover{
-            color: $secundary;
+            color: $white;
         }
     }
 }

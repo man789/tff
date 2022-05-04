@@ -57,7 +57,7 @@ gulp.task('jsification', function(){
 
 // Transferer les images de dev en prod
 gulp.task('imageTransfer', function(){
-  return gulp.src('dev/img/*')
+  return gulp.src('dev/img/**')
     // le dossier destination du fichier
     .pipe(gulp.dest('prod/img'));
 });

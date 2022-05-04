@@ -7,10 +7,10 @@
     }
 }
 .team{
-    background-color: $primary;
+    background-color: $black;
     padding: 40px 0px;
     h2, p{
-        color: $secundary;
+        color: $white;
     }
     @include tablet{
         h2{
