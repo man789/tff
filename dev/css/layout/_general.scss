@@ -28,6 +28,7 @@ img{
 }
 h1,h2,h3{
   font-family: $title-font;
+  text-transform: lowercase;
 }
 h1{
   font-size: 6rem;
