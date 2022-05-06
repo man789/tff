@@ -15,7 +15,7 @@ window.addEventListener('scroll', function () {
         }, 300);
     }
 })
-
+// effet sur polaroid team members page about
 let pola = document.querySelectorAll('.pola');
 
 for(let i=0; i<pola.length; i++){
