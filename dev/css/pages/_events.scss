@@ -2,22 +2,7 @@
 .event{
   background-color: $black;
   color: $white;
-  .banner{
-    .wrapper{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 }
-// End Banner Event
-// 
-// .event{
-//   .main{
-//     background-color: black;
-//   }
-// } 
-// 
 .left-event, .right-event{
   .wrapper{
     display: flex;
@@ -208,6 +193,7 @@ $counter: $items - $rows + 2;
     margin: 10px auto 80px;
     max-width: 94%;
     z-index: 2;
+    transition: .3s all ease-in-out;
     @include mq-sm {
       max-width: 60%;
       box-shadow: $box-shadow;

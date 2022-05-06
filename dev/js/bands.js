@@ -9,8 +9,14 @@ let a = 0;
 
 let bandTab = []
 
+let nameBox = ''
+
 function nameOver(param) {
     a = param;
+
+    nameBox += bandNames[a].innerHTML
+    console.log(nameBox);
+
     bandsImg[a].style.opacity = "1";
     bandNames[a].style.transition = ".3s";
     bandNames[a].style.paddingLeft = "10px";
@@ -20,6 +26,7 @@ function nameOver(param) {
 
 function nameOut(param) {
     a = param;
+    nameBox = ''
     bandsImg[a].style.opacity = "0";
     bandNames[a].style.paddingLeft = "0px";
 
@@ -30,7 +37,7 @@ function nameOut(param) {
 
 
 function typed() {
-    bandTab = bandNames[a].innerHTML.split('');
+    bandTab = nameBox.split('')
     let n = 0
     setInterval(() => {
         if (n < bandTab.length) {
