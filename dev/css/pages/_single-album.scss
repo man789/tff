@@ -16,7 +16,7 @@
         padding: 5px;
     }
 }
-.info-single-album, .info-about{
+.info-single-album{
     display: flex;
     gap: 2em;
     padding: 20px 0px;
@@ -30,14 +30,14 @@
     flex-direction: column;
     align-items: center;
 }
-.pic-single-album, .pic-about{
+.pic-single-album{
     width: 50%;
     img{
         display: block;
         width: 100%;
       }
 }
-.tracks-title, .membre-about{
+.tracks-title{
     width: 50%;
     p{
         padding: 5px;
