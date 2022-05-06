@@ -15,7 +15,23 @@ window.addEventListener('scroll', function () {
         }, 300);
     }
 })
+// effet sur polaroid team members page about
+let pola = document.querySelectorAll('.pola');
 
+for(let i=0; i<pola.length; i++){
+
+    window.addEventListener('scroll', function () {
+        let scroll = window.scrollY;
+        let newOffsetTop = pola[i].offsetTop - 300;
+        let secondOffsettop = pola[i].offsetTop - 305;
+        if (scroll > newOffsetTop){
+            pola[i].classList.add('active-pola')
+        }
+        if (scroll < secondOffsettop){
+            pola[i].classList.remove('active-pola')
+        }
+    })
+} 
 header.addEventListener('mouseenter', function () {
     let scroll = window.scrollY
     if (scroll != 0) {
