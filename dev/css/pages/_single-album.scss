@@ -16,7 +16,7 @@
         padding: 5px;
     }
 }
-.info-single-album, .info-about{
+.info-about{
     display: flex;
     gap: 2em;
     padding: 20px 0px;
@@ -37,16 +37,14 @@
         width: 100%;
       }
 }
-.tracks-title, .membre-about{
+.membre-about{
     width: 50%;
     p{
         padding: 5px;
     }
 }
-.tracks-title{
-  background-color: $black;
-  color: $white;
-}
+
+
 .btn-return-to-artist{
     background-color: $red;
     padding: 10px 15px;
@@ -86,118 +84,96 @@
         box-shadow: 10px 16px 16px -5px rgba(0,0,0,0.76);
     }
 }
-
-
 .album{
-    width: 50%;
+  width: 45%;
 }
-//vynil
-.vinyl {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background-color: #040504;
-  box-shadow: 1px 1px 10px #000;
-  overflow: hidden;
-}
-.light,
-.light-alt {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 5;
-  border-radius: 50%;
-  animation: reflection 20s infinite ease-in-out;
-}
-.light {
-  background-image: linear-gradient(top, transparent, rgba(255,255,255,0.3), transparent);
-}
-.light-alt {
-  background-image: linear-gradient(-160deg, transparent 40%, rgba(255,255,255,0.1) 50%, transparent 60%);
-}
-
-.macaron {
-  transition: all .5s ease-in-out;
-  position: absolute;
-  z-index: 10;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  .cover {
+.info-single-album{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:2rem;
+  .album{
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transition: .3s all ease-in-out;
-
-    &:hover{
-        transform: scale(4.5);
+    height: 500px;
+  }
+  @include tablet{
+    display: flex;
+    flex-direction: column;
+    .album{
+      height: 300px;
     }
   }
-  &:after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 6;
-    display: block;
-    margin: -4% 0 0 -4%;
-    width: 8%;
-    height: 8%;
-    border-radius: 50%;
-    background: white;
-    box-shadow: inset 0 0 2px #000;
-    content: '';
+
+  .vynil{
+    width: 90%;
+    background: url(../img/Vinyl-PNG-Transparent-Image.png) no-repeat center/cover;
+    position: sticky;
+    margin-left: -80%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    top: 80px;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $red;
+    @include tablet{
+      width: 100%;
+      position: relative;
+      background: url(../img/Vinyl-PNG-Transparent-Image.png) no-repeat center/cover;
+      margin-left: 0;
+      height: 400px;
+      margin-bottom: 80px;
+      .tracks-title{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  }
+  .vynil-animated{
+    margin-left: 0;
   }
 }
 
-.grooves {
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  bottom: 2%;
-  left: 2%;
-  z-index: 5;
-  border-radius: 50%;
-  background-image: radial-gradient(center center, circle closest-side, transparent 43%, transparent 53%,
-    #000 54%, transparent 54%, transparent 64%,
-    #000 65%, transparent 65%, transparent 75%,
-    #000 76%, transparent 76%, transparent 86%,
-    #000 87%, transparent 87%, transparent 97%,
-    #000 98%, transparent 98% );
-  background-image: -webkit-radial-gradient(center center, circle closest-side, transparent 43%, transparent 53%,
-    #000 54%, transparent 54%, transparent 64%,
-    #000 65%, transparent 65%, transparent 75%,
-    #000 76%, transparent 76%, transparent 86%,
-    #000 87%, transparent 87%, transparent 97%,
-    #000 98%, transparent 98% );
+//flippin vynil
+
+.scene {
+  width:400px;
+  height:400px;
+  perspective: 30em;
+}
+.card {
+  width:100%;
+  height:100%;
+  position:relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+
+}
+.face {
+  width:100%;
+  height:100%;
+  color:#FFF;
+  line-height:15em;
+  text-align:center;
+  position:absolute;
+  
+  backface-visibility:hidden;
 }
 
-.vinyl-picture-disc .macaron {
-  top: 0%;
-  left: 0%;
-  z-index: 4;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  &:after {
-    margin: -1.25% 0 0 -1.25%;
-    width: 2.5%;
-    height: 2.5%;
-    background: white;
-  }
+.front {
+  background: url(../img/Vinyl-PNG-Transparent-Image.png) no-repeat center/cover;
+  color: indianred;
 }
 
-.song {
-  display: block;
-  margin: 50px 50px 0;
-  width: 400px;
-  text-align: center;
-  audio {
-    display: none;
-  }
+.back {
+  background: url(../img/Vinyl-PNG-Transparent-Image.png) no-repeat center/cover;
+  transform: rotateY(180deg);
+  color: yellowgreen;
 }
+.scene:hover .card {
+  transform: rotateY(180deg);
+}
+
