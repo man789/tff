@@ -48,3 +48,13 @@ for (let i = 0; i < btn_acc.length; i++) {
     }
 }
 //--------- ------------------------------------ ---------//
+
+let album = document.querySelector(".album");
+window.addEventListener('scroll', function () {
+    let vynil = document.querySelector(".vynil");
+    if(window.scrollY +300 > album.offsetTop){
+        vynil.classList.add("vynil-animated");
+    }else {
+        vynil.classList.remove("vynil-animated");
+    }
+})
