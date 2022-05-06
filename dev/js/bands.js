@@ -12,6 +12,8 @@ let bandTab = []
 let nameBox = ''
 
 function nameOver(param) {
+    bandTyped[0].innerHTML = ''
+    bandTab = []
     a = param;
 
     nameBox += bandNames[a].innerHTML
@@ -45,4 +47,5 @@ function typed() {
             n++;
         }
     }, 200);
+    clearInterval();
 }
