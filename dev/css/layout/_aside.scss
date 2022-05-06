@@ -1,5 +1,12 @@
 .aside{
   width: 30%;
+  background-color: $white;
+  color: $black;
+  padding: 2%;
+  height: fit-content;
+  @include tablet {
+    width: 100%;
+  }
   form{
     display: flex;
     margin-top: 5%;

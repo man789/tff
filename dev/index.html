@@ -34,31 +34,48 @@
 <main class="main">
   <div class="banner" style="background: url(./img/bands/gybe.jpg) center/cover;">
     <div class="wrapper">
-      <h1><span>concrete</span><span>jungle</span></h1>
+      <h1></h1>
     </div>
   </div>
-  <section>
-    <div class="wrapper">
-      <h2>LE contenu</h2>
-      <h3>el contenu</h3>
-      <p>CONTENU</p>
-    </div>
-  </section>
   <section class="swiper-home">
-    <div class="wrapper">
+    <div>
+      <h2 class="typed-word">what's new</h2>
+    </div>
+
       <!-- Slider main container -->
-      <div class="swiper swiper_home">
+      <div class="swiper swiper_home wrapper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia aliquam esse aliquid tenetur eum quisquam labore distinctio mollitia iste hic impedit in debitis, cupiditate molestias eos fugit quis veniam!</div>
-          <div class="swiper-slide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia illum assumenda doloribus magni aliquam adipisci dignissimos numquam, culpa inventore dolor quidem amet mollitia optio obcaecati unde omnis. Veniam, cum aperiam?</div>
-          <div class="swiper-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quae sit quis tenetur eaque a dolorum nostrum aliquam temporibus soluta quibusdam libero facilis totam perferendis harum in, veritatis exercitationem necessitatibus!</div>
-          ...
+          <div class="swiper-slide"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia aliquam esse aliquid tenetur eum quisquam labore distinctio mollitia iste hic impedit in debitis, cupiditate molestias eos fugit quis veniam!</p></div>
+          <div class="swiper-slide"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia illum assumenda doloribus magni aliquam adipisci dignissimos numquam, culpa inventore dolor quidem amet mollitia optio obcaecati unde omnis. Veniam, cum aperiam?</p></div>
+          <div class="swiper-slide"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quae sit quis tenetur eaque a dolorum nostrum aliquam temporibus soluta quibusdam libero facilis totam perferendis harum in, veritatis exercitationem necessitatibus!</p></div>
         </div>
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev prev"></div>
+        <div class="swiper-button-next next"></div>
+
+      </div>
+  </section>
+
+  <!-- Les 3 cartes avec img en fond -->
+  <section class="home-triple-card">
+    <div class="home-cards wrapper">
+      <div id="ancre-cards" class="home-card" style='background: url(./img/bands/gybe.jpg);'></div>
+      <div class="home-card" style='background: url(./img/bands/slint.png);'></div>
+      <div class="home-card" style='background: url(./img/bands/bbng.jpg);'></div>
+    </div>
+  </section>
+
+  <!-- Subscribe to our newsletter -->
+  <section class="newsletter">
+    <div class="wrapper">
+      <h2>subscribe to our<br>newsletter</h2>
+      <div>
+        <form action="">
+          <input type="text" placeholder="enter your email" name="search">
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </section>
@@ -101,5 +118,6 @@
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/script.min.js"></script>
 <script src="js/swiperjs.min.js"></script>
+<script src="js/home.min.js"></script>
 </body>
 </html>

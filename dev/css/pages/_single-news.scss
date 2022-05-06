@@ -4,21 +4,13 @@
   .main {
     // margin-top: 150px;
     color: $white;
-
-    .title-single-news {
-      text-align: center;
-      padding: 5% 0 0 0;
-    }
-
   }
-}
-.bg-single-news{
-  height: 400px;
-  width: 100%;
-  background: url('../img/fest-bg.jpg') center/cover;
 }
 .content-single-news{
   padding: 5% 0;
+  h2{
+    text-align: center;
+  }
   .wrapper{
     display: flex;
     gap: 2rem;
@@ -31,6 +23,8 @@
 }
 .info-single-news{
   width: 15%;
+  border-right: 1px solid $white;
+  height: fit-content;
   span{
     display: block;
     margin-bottom: 10%;
