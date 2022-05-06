@@ -34,3 +34,17 @@ header.addEventListener('mouseleave', function () {
         header.style.height = "7%"
     }
 })
+
+//--------- Script Accordion Single Member page ---------//
+let btn_acc = document.querySelectorAll(".accordion");
+let content_acc = document.querySelectorAll(".accordion-member");
+
+for (let i = 0; i < btn_acc.length; i++) {
+    btn_acc[i].onclick = function () {
+        for (let index = 0; index < content_acc.length; index++) {
+            content_acc[index].classList.remove('accordion-active');
+        }
+        content_acc[i].classList.toggle('accordion-active');
+    }
+}
+//--------- ------------------------------------ ---------//
