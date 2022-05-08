@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.min.css">
+  <title></title>
+</head>
+<body class="single-band">
+<!-- Naviguation -->
+<header class="header">
+  <nav class="main-nav wrapper">
+    <div class="links">
+      <a href="bands.html">Bands</a>
+      <a href="events.html">Events</a>
+      <a href="merch.html">Merch</a>
+    </div>
+    <div class="logo-header">
+      <a href="./index.html"><img id="logo-nav" src="./img/logo/concrete.png" alt="concrete jungle logo"></a>
+    </div>
+    <div class="links">
+      <a href="news.html">News</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-bg"></div>
+  </nav>
+</header>
+<!-- Main -->
+<main class="main">
+  <div class="banner">
+    <div class="wrapper">
+      <h1>Nom du Groupe</h1>
+    </div>
+  </div>
+  <section>
+      <div class="single-band-img" style="background: url('./img/bands/bbng.jpg')"></div>
+
+      <div class="sb-btns-info wrapper">
+          <div onclick="active(0)" class="sb-btn-info sb-active sb-bio">biography</div>
+          <div onclick="active(1)" class="sb-btn-info sb-releases">releases</div>
+          <div onclick="active(2)" class="sb-btn-info sb-event">Event</div>
+          <div onclick="active(3)" class="sb-btn-info sb-members">Members</div>
+      </div>
+
+      <div class="sb-contenu wrapper">
+
+        <p class="sb-txt sb-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, velit explicabo. Officia quod minima deleniti in blanditiis eaque numquam, sint quo, odit quos, sapiente cupiditate eum ut velit ipsa corrupti?
+        Totam in dolores eum non! Possimus, omnis fugiat officia, facere consequuntur debitis at assumenda excepturi iusto voluptatibus, vitae repudiandae eveniet porro doloremque impedit provident quidem consequatur! Velit facilis eum eius.
+        Atque, magnam dolores numquam nihil repudiandae libero necessitatibus voluptatibus unde consectetur quisquam ad incidunt sequi adipisci dolor error quibusdam accusamus soluta animi sint ipsa, modi odit quis. Repudiandae, facere reiciendis!
+        Vero, temporibus vel. Explicabo quisquam error laborum quidem repudiandae, architecto, sed voluptate tenetur qui quas ipsum. Dolorem nostrum facilis expedita ipsum voluptatum quisquam temporibus repellat quo. Saepe dolor blanditiis libero.</p>
+        
+        <p class="sb-txt sb-hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, velit explicabo. Officia quod minima deleniti in blanditiis eaque numquam, sint quo, odit quos, sapiente cupiditate eum ut velit ipsa corrupti?
+        Totam in dolores eum non! Possimus, omnis fugiat officia, facere consequuntur debitis at assumenda excepturi iusto voluptatibus, vitae repudiandae eveniet porro doloremque impedit provident quidem consequatur! Velit facilis eum eius.
+        Atque, magnam dolores numquam nihil repudiandae libero necessitatibus voluptatibus unde consectetur quisquam ad incidunt sequi adipisci dolor error quibusdam accusamus soluta animi sint ipsa, modi odit quis. Repudiandae, facere reiciendis!</p>
+
+        <p class="sb-txt sb-hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, velit explicabo. Officia quod minima deleniti in blanditiis eaque numquam, sint quo, odit quos, sapiente cupiditate eum ut velit ipsa corrupti?
+        Totam in dolores eum non! Possimus, omnis fugiat officia, facere consequuntur debitis at assumenda excepturi iusto voluptatibus, vitae repudiandae eveniet porro doloremque impedit provident quidem consequatur! Velit facilis eum eius.
+        Atque, magnam dolores numquam nihil repudiandae libero necessitatibus voluptatibus unde consectetur quisquam ad incidunt sequi adipisci dolor error quibusdam accusamus soluta animi sint ipsa, modi odit quis. Repudiandae, facere reiciendis!
+        Vero, temporibus vel. Explicabo quisquam error laborum quidem repudiandae, architecto, sed voluptate tenetur qui quas ipsum. Dolorem nostrum facilis expedita ipsum voluptatum quisquam temporibus repellat quo. Saepe dolor blanditiis libero.</p>
+
+        <p class="sb-txt sb-hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, velit explicabo. Officia quod minima deleniti in blanditiis eaque numquam, sint quo, odit quos, sapiente cupiditate eum ut velit ipsa corrupti?
+        Totam in dolores eum non! Possimus, omnis fugiat officia, facere consequuntur debitis at assumenda excepturi iusto voluptatibus, vitae repudiandae eveniet porro doloremque impedit provident quidem consequatur! Velit facilis eum eius.</p>
+
+      </div>
+  </section>
+
+    <!-- Subscribe to our newsletter -->
+    <section class="newsletter">
+        <div class="wrapper">
+          <h2>subscribe to our<br>newsletter</h2>
+          <div>
+            <form action="">
+              <input type="text" placeholder="enter your email" name="search">
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrapper">
+    <div class="logo-footer">
+        <img src="img/cjv2_noir.png" alt="concrete jungle logo">      
+    </div>
+    <nav class="nav-footer">
+      <div>
+        <a href="#">Bands</a>
+        <a href="#">Events</a>
+        <a href="#">Merch</a>
+      </div>
+      <div>
+        <a href="#">News</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <div class="search-footer">
+      <input type="text" placeholder="search">
+      <div class="social-footer">
+        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter-square"></i></i></a>
+        <a href="#"><i class="fa-brands fa-instagram-square"></i></i></a>
+        <a href="#"><i class="fa-brands fa-spotify"></i></a>
+        <a href="#"><i class="fa-brands fa-bandcamp"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <input type="text" placeholder="Language">
+    </div>
+  </div>
+  <div class="copy-footer wrapper">
+    <small>Copyright ©2022 All rights reserved | This template was made by sangoku team </small>
+  </div>
+</footer>
+<script src="js/script.min.js"></script>
+<script src="js/bands.min.js"></script>
+</body>
+</html>
