@@ -74,3 +74,7 @@ window.addEventListener('scroll', function () {
         vynil.classList.remove("vynil-animated");
     }
 })
+
+//--------- AOS INIT ---------//
+AOS.init();
+//--------- -------- ---------//
