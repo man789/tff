@@ -127,6 +127,10 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
   //flipflop box
   a{
     border-radius: 10px;
@@ -141,6 +145,9 @@
     width:250px;
     height:250px;
     perspective: 30em;
+    @include tablet {
+      perspective: none;
+    }
   }
   .card {
     width:100%;
@@ -158,18 +165,29 @@
     text-align:center;
     position:absolute;
     backface-visibility:hidden;
+    @include tablet {
+      transform: rotateY(180deg);
+    }
   }
   
   .front {
     color: indianred;
+    @include tablet {
+      display: none;
+    }
   }
   
   .back {
     transform: rotateY(180deg);
-    color: yellowgreen;
+    @include tablet {
+      transform: rotateY(0deg);
+    }
   }
   .scene:hover .card {
     transform: rotateY(180deg);
+    @include tablet {
+      transform: rotateY(0deg);
+    }
   }
   a{
     font-size: 2rem;
