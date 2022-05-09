@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.min.css">
   <title>Events</title>
 </head>
@@ -42,7 +43,7 @@
       <h2>A Flexbox Timeline</h2>
       <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
       <div class="demo-card-wrapper">
-        <div class="demo-card demo-card--step1">
+        <div class="demo-card demo-card--step1" data-aos="flip-left" data-aos-duration="2000">
           <a href="single-event.html">
             <div class="head">
               <div class="number-box">
@@ -58,7 +59,7 @@
         </div>
     
         
-          <div class="demo-card demo-card--step2">
+          <div class="demo-card demo-card--step2" data-aos="flip-right"  data-aos-duration="2000">
             <a href="single-event.html">
               <div class="head">
                 <div class="number-box">
@@ -74,7 +75,7 @@
           </div>
         
     
-        <div class="demo-card demo-card--step3">
+        <div class="demo-card demo-card--step3" data-aos="flip-left"  data-aos-duration="2000">
           <div class="head">
             <div class="number-box">
               <span>JULY 3</span>
@@ -87,7 +88,7 @@
           </div>
         </div>
     
-        <div class="demo-card demo-card--step4">
+        <div class="demo-card demo-card--step4" data-aos="flip-right"  data-aos-duration="2000">
           <div class="head">
             <div class="number-box">
               <span>JULY 4</span>
@@ -100,7 +101,7 @@
           </div>
         </div>
     
-        <div class="demo-card demo-card--step5">
+        <div class="demo-card demo-card--step5" data-aos="flip-left" data-aos-duration="2000">
           <div class="head">
             <div class="number-box">
               <span>JULY 5</span>
@@ -162,6 +163,7 @@
       <small>Copyright ©2022 All rights reserved | This template was made by sangoku team </small>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 
