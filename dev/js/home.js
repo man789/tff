@@ -1,6 +1,3 @@
-// effet JS pour les cartes de la home
-
-
 
 // what's new typed
 
@@ -31,3 +28,33 @@ function typing() {
 }
 
 window.onload = typing()
+
+// parallax pour les cartes de la home
+
+let homeCard = document.querySelectorAll('.home-card');
+
+window.addEventListener('scroll', function() {
+    let offset = window.pageYOffset;
+
+    homeCard.forEach(element => {
+        element.style.backgroundPositionY = offset * 0.5 + "px"
+        element.style.backgroundPositionX = offset * 0.5 + "px"
+    });
+})
+
+// intro
+
+let logoIntro = document.querySelector('.logo-intro');
+let introCC = document.querySelector('.intro')
+
+window.onload = function intro() {
+    logoIntro.style.opacity = 1
+
+    setTimeout(() => {
+        logoIntro.style.opacity = 0
+    }, 3000);
+
+    setTimeout(() => {
+        introCC.style.display = 'none'
+    }, 6000);
+}

@@ -1,12 +1,55 @@
 .home {
     background-color: $white;
+    position: relative;
+    overflow-x: hidden;
+
+    .intro {
+        position: absolute;
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        z-index: 20000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .intro-box-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-intro {
+            width: 60%;
+            margin: 0px;
+            opacity: 0;
+            transition: 2s all ;
+        }
+    }
+
+    .hide-scrollbar {
+        overflow-y: hidden;
+    }
 
     .main {
+
+        .banner-box {
+            width: 80vw;
+            height: 80vh;
+            overflow: hidden;
+        }
         .banner {
             position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 0px 50px 50px 0px;
 
             h1 {
                 color: $white;
+                font-weight: 300;
+                margin: 0;
+                font-size: 2rem;
             }
         }
     

@@ -9,7 +9,7 @@ let a = 0;
 let bandTab = [];
 let nameBox = '';
 
-function nameOver(param) {
+function nameOver(param, type) {
 
     nameBox += bandNames[param].innerHTML;
 
@@ -17,7 +17,7 @@ function nameOver(param) {
     bandNames[param].style.transition = ".3s";
     bandNames[param].style.paddingLeft = "10px";
     
-    typed();
+    typed(type);
 }
 
 function nameOut(param) {
@@ -28,16 +28,16 @@ function nameOut(param) {
     bandNames[param].style.paddingLeft = "0px";
 }
 
-function typed() {
+function typed(value) {
 
-    bandTyped[0].innerHTML = '';
+    bandTyped[value].innerHTML = '';
     bandTab = nameBox.split('');
 
     n = 0;
 
     let timer = setInterval(() => {
         if (n < bandTab.length) {
-            bandTyped[0].innerHTML += bandTab[n];
+            bandTyped[value].innerHTML += bandTab[n];
             n++;
         } else {
             clearInterval(timer);
