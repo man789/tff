@@ -1,4 +1,5 @@
 .not-found{
+    background-color: #dedede;
     .main{
         .wrapper{
             display: flex;
@@ -9,6 +10,7 @@
                 margin-bottom: 0;
                 text-transform: capitalize;
             }
+
         }
     }
 }
@@ -20,6 +22,7 @@
             opacity: 0.8;
         }
     }
+
 }
 .bubble {
     position: absolute;
