@@ -35,10 +35,12 @@ function typed() {
 
     n = 0;
 
-    setInterval(() => {
+    let timer = setInterval(() => {
         if (n < bandTab.length) {
             bandTyped[0].innerHTML += bandTab[n];
             n++;
+        } else {
+            clearInterval(timer);
         }
     }, 200);
 }
