@@ -1,10 +1,28 @@
 .bands {
     .banner {
         background: url("../img/bands/gybe.jpg") center/cover;
+
+        h2 {
+            color: $white;
+        }
     }
 }
 
 .bands-section {
+    position: relative;
+
+
+    .bands-tree {
+        position: absolute;
+        z-index: -15;
+        top: 50%;
+        transform: translate(-54%, -50%);
+        img {
+            transform: rotate(90deg);
+            width: 800px;
+        }
+    }
+
     .bands-container {
         display: flex;
         padding-top: 100px;

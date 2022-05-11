@@ -1,8 +1,101 @@
 .single-band {
 
     .main {
-        .single-band-img {
-            height: 50vh;
+
+        .single-band-bg {
+            padding: 150px 0px 150px 0px;
+            background-color: $black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            h2 {
+                color: $white;
+                font-weight: 300;
+                margin-bottom: 100px;
+            }
+
+            .album {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .sb-box-photos {
+                position: relative;
+                width: 600px;
+                height: 400px;
+    
+                img {
+                    position: absolute;
+                    opacity: 0;
+                    width: 600px;
+                    height: 400px;
+                }
+
+
+                .home-angle {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    transition: .3s all;
+
+                    span {
+                        position: absolute;
+                        color: $white;
+                        font-size: 5rem;
+                    }
+
+                    span:nth-of-type(1) {
+                        left: 30px;
+                        top: 10px;
+                    }
+
+                    span:nth-of-type(2) {
+                        right: 30px;
+                        top: 10px;
+                        transform: rotate(90deg);
+                    }
+
+                    span:nth-of-type(3) {
+                        right: 30px;
+                        bottom: 5px;
+                        transform: rotate(180deg);
+                    }
+
+                    span:nth-of-type(4) {
+                        left: 30px;
+                        bottom: 5px;
+                        transform: rotate(270deg);
+                    }
+                }
+            }
+
+            .sb-box-chiffres {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                margin-right: 200px;
+
+                span {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white;
+                    cursor: pointer;
+                    transition: .1s all;
+                }
+
+                span:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
         }
 
 
@@ -50,6 +143,28 @@
         }
         .sb-show {
             display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .single-band {
+        .main {
+            .single-band-bg {
+                height: 50vh;
+                padding: 0px 50px 0px 50px;
+                background-color: $black;
+                border: solid 1px white;
+                display: flex;
+                align-items: center;
+
+                .sb-box-chiffres {
+                    width: 150px;
+                    height: 150px;
+                }
+
+            }
         }
     }
 }

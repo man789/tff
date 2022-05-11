@@ -1,4 +1,4 @@
-
+window.onload = scrollToTop();
 // what's new typed
 
 let word = document.querySelectorAll('.typed-word');
@@ -11,7 +11,6 @@ function typing() {
     word[0].innerHTML = '&zwnj;'
     letterTab = what.split('')
 
-    let y = false;
     let n = 0;
 
     setInterval(() => {
@@ -45,16 +44,36 @@ window.addEventListener('scroll', function() {
 // intro
 
 let logoIntro = document.querySelector('.logo-intro');
-let introCC = document.querySelector('.intro')
+let introCC = document.querySelector('.intro');
+let bodyHome = document.querySelector('.home');
+let headerHome = document.querySelector('.header');
+let bannerHome = document.querySelector('.blackbox');
+    
+    window.onload = function intro() {
 
-window.onload = function intro() {
-    logoIntro.style.opacity = 1
 
-    setTimeout(() => {
-        logoIntro.style.opacity = 0
-    }, 3000);
+            logoIntro.style.opacity = 1
+            headerHome.style.transform = "translateY(-100%)";
+        
+            setTimeout(() => {
+                logoIntro.style.opacity = 0
+            }, 1500);
+        
+            setTimeout(() => {
+                introCC.style.display = 'none';
+                bodyHome.classList.remove('hide-scrollbar');
+                bannerHome.style.opacity = 0;
+            }, 3000);
+        
+            setTimeout(() => {
+                headerHome.style.transform = "translateY(0%)";
+                bannerHome.style.display = 'none';
+            }, 3500);
+            firstTime = false;
+            console.log(firstTime);
+        }
 
-    setTimeout(() => {
-        introCC.style.display = 'none'
-    }, 6000);
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
 }

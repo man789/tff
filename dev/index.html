@@ -18,8 +18,6 @@
   </div>
 </div>
 
-<div>HELLO</div>
-
 <!-- Naviguation -->
 <header class="header">
   <nav class="main-nav wrapper">
@@ -41,14 +39,44 @@
 </header>
 <!-- Main -->
 <main class="main">
+  
+  <div class="blackbox"></div>
   <div class="banner" style="background: url(./img/bands/gybe.jpg) center/cover;">
-    <div>
-      <h1>concrete jungle</h1>
-    </div>
+
+    <h1>concrete <br> <span>jungle</span></h1>
   </div>
+
+  <section class="home-music">
+    <a href="./music.html" class="banner-box">
+
+      
+      <div class="home-angle">
+        <span>&#8988;</span>
+        <span>&#8988;</span>
+        <span>&#8988;</span>
+        <span>&#8988;</span>
+      </div>
+
+      <div class="marquee">
+        <div class="box-marquee">
+          <h2>View our artists</h2>
+        </div>
+        <div class="box-marquee marquee2">
+          <h2>View our artists</h2>
+        </div>
+      </div>
+
+      <img class="logo-marquee" src="./img/logo/cj_blanc_treeOnly.png" alt="">
+
+      <div class="home-bg-video" id="vid">
+        <video src="" autoplay loop></video>
+      </div>
+    </a>
+  </section>
+
   <section class="swiper-home">
     <div>
-      <h2 class="typed-word">what's new</h2>
+      <h2 class="typed-word">what's new?</h2>
     </div>
 
       <!-- Slider main container -->
@@ -56,9 +84,21 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia aliquam esse aliquid tenetur eum quisquam labore distinctio mollitia iste hic impedit in debitis, cupiditate molestias eos fugit quis veniam!</p></div>
-          <div class="swiper-slide"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia illum assumenda doloribus magni aliquam adipisci dignissimos numquam, culpa inventore dolor quidem amet mollitia optio obcaecati unde omnis. Veniam, cum aperiam?</p></div>
-          <div class="swiper-slide"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quae sit quis tenetur eaque a dolorum nostrum aliquam temporibus soluta quibusdam libero facilis totam perferendis harum in, veritatis exercitationem necessitatibus!</p></div>
+          <div class="swiper-slide">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia aliquam esse aliquid tenetur eum quisquam labore distinctio mollitia iste hic impedit in debitis, cupiditate molestias eos fugit quis veniam!</p>
+            <img src="./img/bands/bbng.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <h3>title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia illum assumenda doloribus magni aliquam adipisci dignissimos numquam, culpa inventore dolor quidem amet mollitia optio obcaecati unde omnis. Veniam, cum aperiam?</p>
+            <img src="./img/bands/bbng.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quae sit quis tenetur eaque a dolorum nostrum aliquam temporibus soluta quibusdam libero facilis totam perferendis harum in, veritatis exercitationem necessitatibus!</p>
+            <img src="./img/bands/bbng.jpg" alt="">
+          </div>
         </div>
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev prev"></div>
@@ -70,9 +110,21 @@
   <!-- Les 3 cartes avec img en fond -->
   <section class="home-triple-card">
     <div class="home-cards wrapper">
-      <div id="ancre-cards" class="home-card" style='background: url(./img/bands/gybe.jpg);'></div>
-      <div class="home-card" style='background: url(./img/bands/slint.png);'></div>
-      <div class="home-card" style='background: url(./img/bands/bbng.jpg);'></div>
+      <div class="home-card" style='background: url(./img/bands/gybe.jpg);'>
+        <a href="./bands.html">bands
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </a>
+      </div>
+      <div class="home-card" style='background: url(./img/bands/slint.png);'>
+        <a href="./events.html">events
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </a>
+      </div>
+      <div class="home-card" style='background: url(./img/bands/bbng.jpg);'>
+        <a href="./news.html">news
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </a>
+      </div>
     </div>
   </section>
 
