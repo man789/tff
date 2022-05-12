@@ -14,8 +14,6 @@ function nameOver(param, type) {
     nameBox += bandNames[param].innerHTML;
 
     bandsImg[param].style.opacity = "1";
-    bandNames[param].style.transition = ".3s";
-    bandNames[param].style.paddingLeft = "10px";
     
     typed(type);
 }
@@ -25,7 +23,6 @@ function nameOut(param) {
     nameBox = '';
 
     bandsImg[param].style.opacity = "0";
-    bandNames[param].style.paddingLeft = "0px";
 }
 
 function typed(value) {

@@ -99,6 +99,16 @@
             }
         }
     }
+
+    .flex-end {
+        .bands-names {
+            .box-names {
+                a {
+                    text-align: right;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -124,6 +134,15 @@
                 .bands-img {
                     width: 700px;
                     height: 400px;
+                }
+            }
+        }
+
+        .name-part {
+            
+            .bands-names {
+                .box-names {
+                    margin: 15px 0px 15px 0px;
                 }
             }
         }

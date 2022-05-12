@@ -29,7 +29,7 @@
     
                 img {
                     position: absolute;
-                    opacity: 0;
+                    opacity: 1;
                     width: 600px;
                     height: 400px;
                 }
@@ -37,8 +37,8 @@
 
                 .home-angle {
                     position: absolute;
-                    width: 100%;
-                    height: 100%;
+                    width: 600px;
+                    height: 400px;
                     z-index: 2;
                     transition: .3s all;
 
@@ -152,16 +152,45 @@
     .single-band {
         .main {
             .single-band-bg {
-                height: 50vh;
-                padding: 0px 50px 0px 50px;
+                padding: 100px 50px 100px 50px;
                 background-color: $black;
                 border: solid 1px white;
                 display: flex;
                 align-items: center;
 
                 .sb-box-chiffres {
+                    margin: 0px;
+                    margin-bottom: 50px;
                     width: 150px;
                     height: 150px;
+                }
+
+                .album {
+                    flex-direction: column;
+                }
+
+
+
+                .sb-box-photos {
+                    position: relative;
+                    width: 400px;
+                    height: 200px;
+        
+                    img {
+                        position: absolute;
+                        opacity: 1;
+                        width: 400px;
+                        height: 200px;
+                    }
+    
+    
+                    .home-angle {
+                        position: absolute;
+                        width: 400px;
+                        height: 200px;
+                        z-index: 2;
+                        transition: .3s all;
+                    }
                 }
 
             }

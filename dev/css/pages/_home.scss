@@ -176,9 +176,8 @@
                 color: $white;
                 font-weight: 300;
                 margin: 0;
-                font-size: 14rem; 
+                font-size: 12rem; 
                 text-align: left;
-                width: 50vw;
 
                 span {
                     font-size: 7rem; 
@@ -322,6 +321,17 @@
         
                 }
             }
+
+            .banner {
+    
+                h1 {
+                    font-size: 8rem; 
+    
+                    span {
+                        font-size: 3rem; 
+                    }
+                }
+            }
             
         }
     }
@@ -377,6 +387,24 @@
     
             .home-card:nth-of-type(3) {
                 margin-top: 0px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .home {
+        .main {
+            .banner {
+    
+                h1 {
+                    font-size: 6rem; 
+    
+                    span {
+                        font-size: 2rem; 
+                    }
+                }
             }
         }
     }
