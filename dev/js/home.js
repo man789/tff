@@ -70,7 +70,6 @@ let bannerHome = document.querySelector('.blackbox');
                 bannerHome.style.display = 'none';
             }, 3500);
             firstTime = false;
-            console.log(firstTime);
         }
 
 
